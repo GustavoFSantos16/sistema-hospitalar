@@ -1,0 +1,233 @@
+/* Reset básico e tipografia */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f0f4f8;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Container do Cabeçalho */
+.cabecalho {
+    text-align: center;
+    margin-bottom: 25px;
+    width: 100%;
+    max-width: 480px;
+}
+
+.cabecalho h1 {
+    color: #1a5276;
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.cabecalho hr {
+    border: none;
+    height: 3px;
+    background-color: #2980b9;
+    border-radius: 2px;
+}
+
+/* Estilização dos Formulários */
+.formulario {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+    width: 100%;
+    max-width: 480px;
+    margin-bottom: 15px;
+}
+
+/* Campos de entrada (Labels, Inputs e Select) */
+.campoNome,
+.campoAno,
+.motivo {
+    margin-bottom: 18px;
+}
+
+label {
+    display: block;
+    font-weight: 600;
+    color: #2c3e50;
+    margin-bottom: 6px;
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1.5px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #f8fafc;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus,
+select:focus {
+    outline: none;
+    border-color: #3498db;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+/* Botões do Formulário Principal */
+.botoes {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+button {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button[type="submit"] {
+    background-color: #27ae60;
+    color: #ffffff;
+}
+
+button[type="submit"]:hover {
+    background-color: #219653;
+}
+
+button[type="reset"] {
+    background-color: #e74c3c;
+    color: #ffffff;
+}
+
+button[type="reset"]:hover {
+    background-color: #c0392b;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Botão de Visualizar Fila */
+.visualizarFila {
+    width: 100%;
+    max-width: 480px;
+}
+
+.visualizarFila button {
+    width: 100%;
+    background-color: #2980b9;
+    color: #ffffff;
+}
+
+.visualizarFila button:hover {
+    background-color: #1f618d;
+}
+
+/* Mensagens de Feedback PHP */
+p {
+    margin-top: 15px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* Container da Página de Fila */
+.container-fila {
+    width: 100%;
+    max-width: 950px;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+/* Responsividade para Tabela em Telas Pequenas */
+.tabela-wrapper {
+    overflow-x: auto;
+    margin-bottom: 20px;
+}
+
+/* Estilização da Tabela */
+.tabela-pacientes {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.95rem;
+}
+
+.tabela-pacientes th,
+.tabela-pacientes td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.tabela-pacientes th {
+    background-color: #1a5276;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.tabela-pacientes tbody tr:hover {
+    background-color: #f8fafc;
+}
+
+/* Badges de Prioridade (Etiquetas Coloridas) */
+.badge {
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    display: inline-block;
+}
+
+.badge.urgente {
+    background-color: #fadbd8;
+    color: #78281f;
+}
+
+.badge.pouco-urgente {
+    background-color: #fdebd0;
+    color: #7e5109;
+}
+
+.badge.nao-urgente {
+    background-color: #d4efdf;
+    color: #145a32;
+}
+
+/* Botão Voltar */
+.form-voltar {
+    margin-top: 15px;
+}
+
+.btn-voltar {
+    background-color: #7f8c8d;
+    color: #ffffff;
+    width: 100%;
+    max-width: 200px;
+}
+
+.btn-voltar:hover {
+    background-color: #626567;
+}
+
+.sem-registros {
+    text-align: center;
+    color: #7f8c8d;
+    padding: 20px;
+}
