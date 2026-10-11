@@ -20,7 +20,7 @@
         // Conecta com o banco 
         $servername = "localhost";
         $username = "root";
-        $password = "gus@2009";
+        $password = "";
         $dbname = "sistema_hospital";
 
         $conn = new mysqli($servername, $username, $password, $dbname);
